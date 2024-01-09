@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodपुर</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+
+    <!-- navbar  -->
+    
+    <nav class="navbar">
+      <div id="brand">Foodपुर</div>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="term.html">Privacy Policy</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a class="loginbtn" href="#">LogIn</a></li>
+      </ul>
+      <div class="searchmodule">
+        <input id="search" type="text" placeholder="Search Here" />
+        <label for="search">
+        <i class="fa-solid fa-magnifying-glass" id="searchicon"></i></label>
+      </div>
+      <div>
+      </div>               
+      <div>
+        <i class="fa-solid fa-cart-shopping" id ="cart"></i>
+        <h5 id="cartnumber">0</h5>
+      </div>                     
+      <i class="fa-solid fa-bars" id="menubar" aria-hidden="true"></i>
+      <div id="username">
+        
+      </div>
+    </nav>
+
+<!-- Cart Aria -->
+
+    
+<div class="cartheading">
+  <h2>Cart List</h2>
+  <h2>Total : <span id="totalamount">00.00</span></h2>
+</div>
+<div class="cartbtn">
+  <button id="closecart">Close</button>
+  <button id="checkout" >Checkout</button>
+</div>
+<div class="cartaria">
+  <div id="cartmsg">
+    Empty Cart
+  </div>
+</div>
+
+    <!-- Slider -->
+    <div class="slider_container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+      <div class="slider">
+        <div class="slide active">
+          <img src="img/1.jpg"  alt="">
+        </div>
+        <div class="slide">
+          <img src="img/2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="img/3.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="img/4.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="left" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">&#8592</div>
+    <div class="right" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">&#8594</div>
+
+    <!-- heading -->
+    <div class="trending" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000"><p>Order your favourite foods <i class="fa-solid fa-hand-point-down"></i></p>
+    </div>
+
+    <!-- Product Add -->
+
+    <div class="products">
+      <div class="product" data-aos="fade-up" data-aos-duration="1000">
+          <img src="img/products/burger.jpg" alt="">
+          <h3 class="pname">Burger</h3>
+          <h4 class="price">Price : <i class="fa-solid fa-indian-rupee-sign" id="rupeesign"></i> 149 </h4>
+          <button class="addtocart">Add to Cart</button>     
+      </div>
+    </div>
+      
+
+    <!-- login and registration form -->
+
+    <div class="registrationform">
+      <h2>Register Form</h2>
+      <form action="">
+        <div>
+          <i class="fa-solid fa-user"></i>
+          <input type="text" placeholder="Name" id="name" >
+        </div>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" placeholder="Email" id="email">
+        </div>
+        <div>
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Password" id="password">
+        </div>
+        <button class="login" type="button" onclick="registerUser()">Register</button>
+        <div class="registerbtn" id="logbtn" >
+          <p>Already User ? <a href="#">Login Here</a></p>
+        </div>
+      </form>
+      <div id="resclose">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+
+    <div class="loginform">
+      <h2>Login Form</h2>
+      <form action="">
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" placeholder="Email" id="lemail">
+        </div>
+        <div>
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Password" id="lpassword">
+        </div>
+        <div class="hidepwd">
+          <i class="fa-solid fa-eye-slash"></i>
+        </div>
+        <div class="forgetpwd">
+          <a href="#" id="forgetpwd">Forget Password?</a>
+        </div>
+        <button class="login" type="button" onclick="loginUser()">Login</button>
+        <div class="registerbtn" id="resbtn">
+          <p>Not a User ? <a href="#">Register Here</a></p>
+        </div>
+      </form>
+      <div id="logclose">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+    
+    <div class="checkout">
+      <div class="payamt">
+        Payable Amount : <span id="cprice">0</span>
+      </div>
+      <div class="add">
+        <input type="text" placeholder="Name" required id="aname">
+        <input type="text" placeholder="Mobile" required id="phone">
+        <input type="text" placeholder="Street NO./House No.">
+        <input type="text" placeholder="Village/Mohalla" required id="village">
+        <input type="text" placeholder="District" required id="district">
+        <input type="text" placeholder="State" required>
+        <input type="text" placeholder="Pincode" required id="pincode">
+      </div>
+      <div class="btn">
+        <button id="cancel">Cancel</button>
+        <button id="pay">Pay</button>
+      </div>
+    </div>
+
+    <!-- Footer  -->
+
+    <div class="footer" data-aos="fade-up" data-aos-duration="300">
+      <div class="pages">
+        <h2 >Quick Pages</h2>
+        <a href="#">Product</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policies</a>
+        <a href="#">Check Availbility</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+      <div class="pages">
+        <h2 >Social Meadia Pages</h2>
+        <a href="#"><i class="fa-brands fa-facebook"></i>&emsp;Facebook</a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i>&emsp;LinkedIn</a>
+        <a href="#"><i class="fa-brands fa-instagram"></i>&emsp;Instagram</a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i>&emsp;Whatsapp</a>
+        <a href="#"><i class="fa-brands fa-twitter"></i>&emsp;twiter</a>
+        <a href="#"><i class="fa-brands fa-youtube"></i>&emsp;YouTube</a>
+        <a href="#"><i class="fa-solid fa-envelope"></i>&emsp;Gmail</a>
+      </div>
+      <div class="pages">
+        <h2 >Payment Modes</h2>
+        <div class="paylogos">
+          <img src="https://img.icons8.com/color/48/000000/visa.png"/>
+          <img src="https://img.icons8.com/color/48/000000/mastercard.png"/>
+          <img src="https://img.icons8.com/color/48/000000/paypal.png"/>
+          <img src="https://img.icons8.com/color/48/000000/bank-card-back-side.png"/> 
+          <img src="https://img.icons8.com/color/48/000000/amex.png"/>
+          <img src="https://img.icons8.com/color/48/000000/apple-pay.png"/>
+        </div>
+      </div>
+    <div class="instruction"><span>Copyright &copy All contents are reserved.</span> </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+[
+{
+    "id" : 1,
+    "name" : "Burger",
+    "img" : "img/products/burger.jpg",
+    "price" : 149
+},
+
+{
+    "id" : 2,
+    "name" : "French Fries",
+    "img" : "img/products/frech fries.png",
+    "price" : 199
+},
+{
+    "id" : 3,
+    "name" : "Choco Ice Cream",
+    "img" : "img/products/icecreame.jpg",
+    "price" : 299
+},
+{
+    "id" : 4,
+    "name" : "Cake",
+    "img" : "img/products/cake.jpg",
+    "price" : 399
+},
+{
+    "id" : 5,
+    "name" : "Coffee",
+    "img" : "img/products/coffee.jpg",
+    "price" : 249
+},
+{
+    "id" : 6,
+    "name" : "Noodle",
+    "img" : "img/products/noodles.png",
+    "price" : 109
+},
+{
+    "id" : 7,
+    "name" : "Sandwich",
+    "img" : "img/products/sandwich.jpg",
+    "price" : 79
+},
+{
+    "id" : 8,
+    "name" : "Samose",
+    "img" : "img/products/somose.jpg",
+    "price" : 30
+},
+{
+    "id" : 9,
+    "name" : "Ice Cream",
+    "img" : "img/products/ice cream.jpg",
+    "price" : 199
+},
+{
+    "id" : 10,
+    "name" : "Momos",
+    "img" : "img/products/momos.jpg",
+    "price" : 165
+},
+{
+    "id" : 11,
+    "name" : "Jalebi",
+    "img" : "img/products/jalebi.jpg",
+    "price" : 399
+},
+{
+    "id" : 12,
+    "name" : "Pizza",
+    "img" : "img/products/pizza.jpg",
+    "price" : 239
+}
+]
