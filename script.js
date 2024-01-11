@@ -190,10 +190,10 @@ function addDataToHTML(currentArray) {
         )});
         if(text = ""){
           addDataToHTML(productList);
-                     document.querySelector('.slider_container').style.setProperty("display", "flex", "important");  
-           document.querySelector('.trending').style.setProperty("display", "flex", "important");
-           left.style.setProperty("display", "flex", "important");
-           right.style.setProperty("display", "flex", "important");
+            document.querySelector('.slider_container').style.setProperty("display", "flex", "important");  
+            document.querySelector('.trending').style.setProperty("display", "flex", "important");
+            left.style.setProperty("display", "flex", "important");
+            right.style.setProperty("display", "flex", "important");
        }
        else{
          if(filterArray == ""){
